@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yibo Liu | Personal Homepage</title>
+  <meta name="description" content="Yibo Liu's personal academic homepage. Research interests include computational social science, spatial intelligence, urban computing, environmental finance, and risk transmission." />
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #1d4ed8;
+      --accent-soft: #eff6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(247, 248, 250, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      color: var(--text);
+    }
+
+    .links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    .links a {
+      color: var(--muted);
+    }
+
+    .links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 72px 0 36px;
+    }
+
+    .hero-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 42px;
+      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.06);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.1;
+      letter-spacing: -1.2px;
+    }
+
+    .subtitle {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .intro {
+      margin-top: 28px;
+      max-width: 860px;
+      font-size: 17px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .button:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    main {
+      padding-bottom: 64px;
+    }
+
+    section {
+      margin-top: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    section h2 {
+      margin: 0 0 18px;
+      font-size: 24px;
+      letter-spacing: -0.4px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .item {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+    }
+
+    .item h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .item p {
+      margin: 6px 0 0;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #1e40af;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .pub {
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .pub:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .pub-title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .pub-meta {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .pub-desc {
+      margin: 10px 0 0;
+    }
+
+    ul.clean {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    ul.clean li {
+      margin: 8px 0;
+    }
+
+    footer {
+      padding: 28px 0 42px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        height: auto;
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .links {
+        gap: 12px;
+      }
+
+      .hero {
+        padding-top: 36px;
+      }
+
+      .hero-card,
+      section {
+        padding: 22px;
+        border-radius: 18px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">Yibo Liu 刘一博</a>
+      <nav class="links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#interests">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-card">
+        <span class="eyebrow">Computational Social Science · Spatial Intelligence · Environmental Finance</span>
+        <h1>Yibo Liu 刘一博</h1>
+        <p class="subtitle">
+          Incoming Ph.D. Student in Intelligent Science and Technology, Fudan University
+          <br />
+          Joint Training Program: Beijing Zhongguancun Academy
+        </p>
+
+        <p class="intro">
+          I am interested in spatial interaction, risk transmission, and policy evaluation in complex socio-economic systems.
+          My research lies at the intersection of computational social science, spatial intelligence, urban computing,
+          environmental finance, energy transition, and financial systemic risk.
+        </p>
+
+        <p class="intro">
+          我的研究关注复杂社会经济系统中的空间交互、风险传导与政策效应评估，主要结合空间计量经济学、机器学习、
+          GIS 空间分析、面板数据模型和 CoVaR 风险网络等方法，研究环境风险、碳排放政策、能源市场、城市系统与金融市场之间的
+          非线性关系和空间溢出机制。
+        </p>
+
+        <div class="actions">
+          <a class="button primary" href="mailto:liuybbob@163.com">Email Me</a>
+          <a class="button" href="#publications">View Publications</a>
+          <a class="button" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am an incoming Ph.D. student in Intelligent Science and Technology at Fudan University, with a joint training
+          affiliation at Beijing Zhongguancun Academy. Before joining Fudan University, I received my M.A. in Public Policy
+          from Lanzhou University and my B.A. in Land Resource Management from Renmin University of China.
+        </p>
+        <p>
+          My work focuses on how environmental risks, carbon policies, energy transitions, and urban spatial structures
+          reshape financial stability and regional development. I use quantitative methods, spatial analysis, machine learning,
+          and network-based risk models to examine nonlinear relationships and spillover effects across cities, regions,
+          and financial markets.
+        </p>
+      </section>
+
+      <section id="interests">
+        <h2>Research Interests</h2>
+        <div class="tags">
+          <span class="tag">Computational Social Science</span>
+          <span class="tag">Spatial Intelligence</span>
+          <span class="tag">Urban Computing</span>
+          <span class="tag">Environmental Finance</span>
+          <span class="tag">Climate Risk</span>
+          <span class="tag">Financial Systemic Risk</span>
+          <span class="tag">Tail Risk Spillovers</span>
+          <span class="tag">Green Finance</span>
+          <span class="tag">Spatial Econometrics</span>
+          <span class="tag">Machine Learning</span>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+
+        <div class="pub">
+          <p class="pub-title">
+            Does Cutting Carbon Emissions Reduce Tail Risk Spillovers? A Quantile LSTM-KAN-CoVaR Approach
+          </p>
+          <p class="pub-meta">
+            Journal of Futures Markets, 2025. ABS 3, JCR Q2, IF = 2.3. Corresponding Author.
+          </p>
+          <p class="pub-desc">
+            This paper examines the dynamic relationship between carbon emissions and tail-risk spillover networks in
+            European futures markets. The findings suggest that oil and natural gas futures are major receivers of tail risk,
+            while carbon emissions amplify tail-risk exposure in renewable energy futures and strengthen risk spillovers
+            across energy futures markets.
+          </p>
+        </div>
+
+        <div class="pub">
+          <p class="pub-title">
+            Nonlinear Relationship between Physical Environment Risks, Investor Attentions, and Financial Systemic Risks:
+            Evidence from mLSTM-CoVaR Networks
+          </p>
+          <p class="pub-meta">
+            Journal of Environmental Management, 2025. ABS 3, IF = 8.0, JCR Q1/Q2. Corresponding Author.
+          </p>
+          <p class="pub-desc">
+            This study investigates how physical environmental risks affect financial systemic risks. The results reveal
+            significant nonlinear interactions between environmental risks and financial vulnerability. In normal market
+            conditions, investor attention can amplify the impact of environmental risks on financial stability.
+          </p>
+        </div>
+
+        <div class="pub">
+          <p class="pub-title">
+            Green Finance and Micro-Zone Level Carbon Emissions
+          </p>
+          <p class="pub-meta">
+            Finance Research Letters, 2025. ABS 2, IF = 7.4. Third Author.
+          </p>
+          <p class="pub-desc">
+            This study analyzes the effects of green finance policies on carbon emissions across different urbanized areas.
+            The findings show that green finance reduces emissions mainly in urban centers while potentially inducing carbon
+            leakage toward suburban areas.
+          </p>
+        </div>
+
+        <h3>Under Review</h3>
+        <ul class="clean">
+          <li>
+            Linking Air Quality to Housing Markets: Idiosyncratic Effects, Spatial Spillovers, and Policy Insights.
+            <span class="muted">Journal of Cleaner Production. First Author.</span>
+          </li>
+          <li>
+            Urban-Rural Carbon Dynamics: Quantifying Heterogeneous Reduction, Leakage, and Spillover Effects of the EU ETS.
+            <span class="muted">Applied Spatial Analysis and Policy. First Author.</span>
+          </li>
+        </ul>
+
+        <h3>Working Papers</h3>
+        <ul class="clean">
+          <li>
+            Modelling and Forecasting Electricity Price Volatility with Climate Factors: Evidence from 16 European Countries.
+          </li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>Fudan University</h3>
+            <p>Ph.D. in Intelligent Science and Technology</p>
+            <p class="muted">2026.09 – Present</p>
+            <p class="muted">Joint Training Program: Beijing Zhongguancun Academy</p>
+          </div>
+
+          <div class="item">
+            <h3>Lanzhou University</h3>
+            <p>M.A. in Public Policy</p>
+            <p class="muted">2023.09 – 2026.06</p>
+            <p class="muted">
+              Selected Coursework: Advanced Econometrics, R Programming and Applications, GIS and Spatial Analysis,
+              Environmental Governance and Energy Policy.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Renmin University of China</h3>
+            <p>B.A. in Land Resource Management</p>
+            <p class="muted">2019.09 – 2023.06</p>
+            <p class="muted">
+              Selected Coursework: Intermediate Microeconomics, Intermediate Macroeconomics, Real Estate Finance,
+              Geographic Information Systems.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Research Projects</h2>
+
+        <div class="item">
+          <h3>
+            Evaluation of the Reform Pilot Program for Gansu Provincial State-Owned Capital Investment and Operation Companies
+          </h3>
+          <p class="muted">Principal Investigator, 2024.09 – 2024.12</p>
+          <p>
+            Commissioned by the Gansu Provincial Party Committee, this project evaluated the reform pilot program of
+            provincial state-owned capital investment and operation companies. The evaluation report received positive
+            written comments from the Secretary of the Gansu Provincial Party Committee.
+          </p>
+        </div>
+
+        <br />
+
+        <div class="item">
+          <h3>Implementation of DRG Payment Reform from the Perspectives of Doctors and Patients</h3>
+          <p class="muted">Research Participant, 2021.05 – 2022.05</p>
+          <p>
+            A municipal-level undergraduate innovation project investigating the implementation of DRG payment reform and
+            providing policy suggestions for hospital payment system transformation.
+          </p>
+        </div>
+
+        <br />
+
+        <div class="item">
+          <h3>Smart Campus Connect</h3>
+          <p class="muted">National-level Undergraduate Entrepreneurship Project, 2020.05 – 2021.05</p>
+          <p>
+            Developed a campus information-sharing platform for universities, aiming to improve access to campus information
+            resources and student services.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>Programming and Data Analysis</h3>
+            <p>
+              R, Python, Stata; panel data models, spatial econometrics, machine learning, and financial risk analysis.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Spatial Analysis and Visualization</h3>
+            <p>
+              ArcGIS, GIS spatial analysis, spatial visualization, research figure design, and model result visualization.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Research Methods</h3>
+            <p>
+              Econometrics, policy evaluation, CoVaR models, LSTM-based forecasting, spatial spillover analysis,
+              environmental and financial data analysis.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>Languages</h3>
+            <p>Chinese, English. CET-6: 541.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="awards">
+        <h2>Awards and Activities</h2>
+        <ul class="clean">
+          <li>
+            Individual Excellence Award and Outstanding Camp Participant, 2025 AI Future Program,
+            Zhongguancun Academy & Zhongguancun Institute of Artificial Intelligence, 2025.
+          </li>
+          <li>
+            Second-Class Graduate Academic Scholarship, School of Management, Lanzhou University, 2025.
+          </li>
+          <li>
+            “Charity Ambassador” Honorary Certificate, Muli Tibetan Autonomous County Charity Association, 2021.
+          </li>
+          <li>
+            Outstanding Paper Award, Beijing Traffic Engineering Association, 2018.
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:liuybbob@163.com">liuybbob@163.com</a>
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/Klxxz001" target="_blank" rel="noopener">https://github.com/Klxxz001</a>
+        </p>
+        <p>
+          Google Scholar / ORCID:
+          <span class="muted">Coming soon</span>
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="container">
+      © 2025 Yibo Liu. Last updated in 2025.
+    </div>
+  </footer>
+</body>
+</html>
