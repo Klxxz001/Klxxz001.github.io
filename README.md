@@ -70,6 +70,15 @@ avatar: "/assets/images/profile.jpg"
 
 `authors` 按真实顺序填写；与你的 `author.name` 相同的作者自动加粗。`corresponding_author: true` 添加通讯作者标记。`badge` 是图片上方的期刊简称，例如 JFM；年份读取 `year`。
 
+`summary` 是英文要点列表，建议每篇 3–5 条。每个 `-` 会显示为一条项目符号；以后可直接在 `_data/publications.yml` 中增删或调整：
+
+```yaml
+  summary:
+    - "Describes the method and study sample."
+    - "Summarizes the main empirical finding."
+    - "States a conditional result or policy implication."
+```
+
 当前配图使用本人提供的论文框架图，原文件位于 `E:\个人主页\论文概览图\`，对应 JFM、JEM、FRL 三篇论文。用于网站的副本保存在 `assets/images/publications/`，保留原始比例与分辨率，点击图片可查看大图。更换时更新 `image` 和 `image_alt`，避免裁剪框架图中的内容。
 
 ## 构建兼容性

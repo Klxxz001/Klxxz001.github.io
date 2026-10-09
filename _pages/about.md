@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a **Ph.D. student in Electronic Information at the School of Data Science, Fudan University**, in a joint training program with **Beijing Zhongguancun Academy**. I am co-supervised by Prof. [Jie Feng](https://vonfeng.github.io/) (Beijing Zhongguancun Academy) and Prof. [Siming Chen](http://simingchen.me/) (School of Data Science, Fudan University). Previously, I received my M.A. in Public Policy from Lanzhou University and my B.A. in Land Resource Management from Renmin University of China.
+I am a **Ph.D. student in Electronic and Information Engineering at the School of Data Science, Fudan University**, in a joint training program with **Beijing Zhongguancun Academy**. I am co-supervised by Prof. [Jie Feng](https://vonfeng.github.io/) (Beijing Zhongguancun Academy) and Prof. [Siming Chen](http://simingchen.me/) (School of Data Science, Fudan University). Previously, I received my M.A. in Public Policy from Lanzhou University and my B.A. in Land Resource Management from Renmin University of China.
 
 My current research focuses on **spatial intelligence, agentic AI, and urban science**. I am interested in systems that understand, simulate, and act in open real-world environments, especially cities. My interests include multimodal spatial reasoning, world models and embodied intelligence, multi-agent collaboration, and social simulation, with applications in urban governance and public services.
 
