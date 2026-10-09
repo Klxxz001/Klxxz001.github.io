@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220">
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
   <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#d6e0e5" stroke-width=".5"/></pattern></defs>
-  <rect width="300" height="220" fill="#eaf1f5"/><rect width="300" height="220" fill="url(#grid)"/>
+  <rect width="500" height="300" fill="#eaf1f5"/><rect width="500" height="300" fill="url(#grid)"/><g transform="translate(45 -8) scale(1.367)">
   <circle cx="151" cy="102" r="72" fill="none" stroke="#d0dfe7"/><circle cx="151" cy="102" r="49" fill="none" stroke="#d0dfe7" stroke-dasharray="3 5"/>
   <g fill="none" stroke="#6d91a7" stroke-width="1.4"><path d="M75 77 151 102 218 60 231 142 151 102 104 158 75 77 218 60M104 158 231 142M151 102 153 33"/></g>
   <g fill="#6a94ae"><circle cx="75" cy="77" r="8"/><circle cx="218" cy="60" r="9"/><circle cx="231" cy="142" r="7"/><circle cx="104" cy="158" r="9"/><circle cx="153" cy="33" r="5"/></g>
   <circle cx="151" cy="102" r="19" fill="#285b79"/><text x="151" y="107" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="white">CO₂</text>
   <text x="22" y="194" font-family="Arial,sans-serif" font-size="9" letter-spacing="1.4" fill="#58798e">CARBON &amp; ENERGY NETWORKS</text>
-</svg>
+</g></svg>

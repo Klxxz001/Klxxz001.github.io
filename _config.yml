@@ -1,11 +1,16 @@
 title: "Yibo Liu | 刘一博"
-description: "Yibo Liu is a Ph.D. student at Fudan University working on computational social science, spatial intelligence, environmental finance, and risk transmission."
+description: "Intelligent Science and Technology. Joint training at Beijing Zhongguancun Academy."
 url: "https://klxxz001.github.io"
 baseurl: ""
 repository: "Klxxz001/Klxxz001.github.io"
 lang: en
 timezone: Asia/Shanghai
 last_updated: "2026-10-09"
+
+# Enable only after adding your own Google Scholar profile and citation data.
+google_scholar_stats: false
+google_scholar_stats_use_cdn: true
+google_analytics_id: ""
 
 author:
   name: "Yibo Liu"
@@ -15,17 +20,28 @@ author:
   field: "Intelligent Science and Technology"
   university: "Fudan University"
   joint_affiliation: "Beijing Zhongguancun Academy"
+  bio: "Ph.D. Student, Fudan University"
   email: "liuybbob@163.com"
-  github: "https://github.com/Klxxz001"
-  avatar: ""
+  github: "Klxxz001"
+  avatar: "/assets/images/profile-placeholder.svg"
   googlescholar: ""
   orcid: ""
   cv: ""
 
 markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM
+  hard_wrap: false
   auto_ids: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  # Keep the original template's Sass; suppress its known legacy syntax notices.
+  silence_deprecations:
+    - slash-div
+    - mixed-decls
 
 include:
   - _pages
@@ -38,7 +54,11 @@ exclude:
   - Gemfile.lock
   - vendor
   - .bundle
+  - .github
   - scripts
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
   - run_server.ps1
   - run_server.sh
   - preview.log

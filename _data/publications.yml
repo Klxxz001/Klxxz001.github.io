@@ -7,6 +7,7 @@
     - Yibo Liu
     - Peng Lu
   journal: Journal of Futures Markets
+  badge: JFM
   year: 2025
   doi: "10.1002/fut.70063"
   corresponding_author: true
@@ -22,6 +23,7 @@
     - Ziwei Wang
     - Yibo Liu
   journal: Journal of Environmental Management
+  badge: JEM
   year: 2025
   doi: "10.1016/j.jenvman.2025.124065"
   corresponding_author: true
@@ -38,6 +40,7 @@
     - Ziwei Wang
     - Yibo Liu
   journal: Finance Research Letters
+  badge: FRL
   year: 2025
   doi: "10.1016/j.frl.2025.107262"
   corresponding_author: false

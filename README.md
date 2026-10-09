@@ -1,18 +1,18 @@
 # Yibo Liu · 刘一博
 
-基于 [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) 改版的个人学术主页，使用 Jekyll 构建。保留原有 GitHub 仓库与网址：<https://klxxz001.github.io/>。
+使用 [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) 原版模板的个人学术主页，参考页面为 <https://rayeren.github.io/acad-homepage.github.io/>。沿用原有仓库与网址 <https://klxxz001.github.io/>。
+
+直接复用上游的 SCSS、字体资源、布局和导航脚本，保留白色背景、Trebuchet MS 字体、圆形头像、章节分隔线、论文框和普通列表。内容已替换为个人资料；未提供的报告、实习、引用数与 Scholar 链接不展示。
 
 ## 本地目录
 
-```text
-E:\个人主页\
-├── Klxxz001.github.io\       你的主页仓库，在此修改
-└── acad-homepage-reference\  原始参考仓库，保留用于对照
-```
+- `E:\个人主页\Klxxz001.github.io`：你的主页仓库。
+- `E:\个人主页\acad-homepage-reference`：原始模板，保留用于对照。
+- `E:\个人主页\预览截图`：本地预览截图。
 
-改版分支为 `codex/academic-homepage-redesign`。原版页面仍保存在 `main` 的 Git 历史中。本地预览不会更新线上网站。
+分支：`codex/academic-homepage-redesign`。原始主页保存在 `main` 的 Git 历史中。本地修改与提交不会更新线上网站。
 
-## 启动预览
+## 本地预览
 
 在 PowerShell 中执行：
 
@@ -21,74 +21,71 @@ cd 'E:\个人主页\Klxxz001.github.io'
 .\run_server.ps1
 ```
 
-打开 <http://127.0.0.1:4000/>。关闭服务时，在运行服务的终端中按 `Ctrl+C`。
+打开 <http://127.0.0.1:4000/>。关闭服务时在运行服务的终端中按 Ctrl+C。
 
-脚本优先使用 Windows 的 Bundler；没有时会使用现有的 Ubuntu WSL。当前电脑已经在 WSL 中配置了 Ruby、Bundler 和本项目的依赖。WSL 本地依赖放在用户目录中，不会提交到 GitHub。
+脚本优先使用 Windows 的 Bundler；没有时使用 Ubuntu WSL。本机 WSL 已配置 Ruby、Bundler 和依赖，依赖位于 WSL 用户目录。
 
-换一个端口：
+其他常用命令：
 
 ```powershell
 .\run_server.ps1 -Port 4001
-```
-
-只构建、不启动服务：
-
-```powershell
 .\run_server.ps1 -Build
 ```
 
-如果使用 Linux 或 WSL 终端：
+Linux 或 WSL 终端使用 `bash run_server.sh`。内容修改会自动重新构建；修改 `_config.yml` 或 `Gemfile` 后重启服务。
 
-```bash
-bash run_server.sh
-```
-
-一般内容修改会触发重新构建和浏览器刷新。修改 `_config.yml` 后需要重启服务。
-
-## 修改内容的位置
+## 修改内容
 
 | 内容 | 文件 |
 |---|---|
-| 姓名、身份、单位、联系方式、头像、更新时间 | `_config.yml` |
-| 英文简介、中文简介、页面章节 | `_pages/about.md` |
+| 姓名、侧栏身份与单位、联系方式、头像 | `_config.yml` 中的 `author` |
+| 英文与中文简介、章节结构 | `_pages/about.md` |
 | 顶部导航 | `_data/navigation.yml` |
-| 研究方向 | `_data/research.yml` |
-| 已发表论文、作者顺序、DOI、摘要 | `_data/publications.yml` |
-| 在审稿件与工作论文 | `_data/working_papers.yml` |
+| 最新动态 | `_data/news.yml` |
+| 已发表论文、作者、期刊、年份、DOI、图片 | `_data/publications.yml` |
+| 在审稿件、工作论文 | `_data/working_papers.yml` |
 | 研究项目 | `_data/projects.yml` |
 | 教育经历 | `_data/education.yml` |
-| 奖励与活动 | `_data/awards.yml` |
-| 配色、字体、间距、手机布局 | `assets/css/main.css` |
+| 奖励 | `_data/awards.yml` |
+| 技能 | `_data/skills.yml` |
+| 原版字体、颜色和断点 | `_sass/_variables.scss` |
+| 原版侧栏、导航、正文布局 | `_sass/_sidebar.scss`、`_sass/_navigation.scss`、`_sass/_page.scss` |
+| 原版样式入口、论文框样式 | `assets/css/main.scss` |
 
-论文的 `authors` 按真实顺序填写；与 `_config.yml` 中 `author.name` 相同的作者会自动加粗。`corresponding_author: true` 会在你的姓名后添加通讯作者标记。不要将模板样例或他人的引用数加入个人成果。
+`_data/research.yml` 保留详细研究方向资料，可用于继续扩写简介。
 
-Google Scholar、ORCID 和 CV 链接只有填写后才会展示。目前未启用引用爬虫或访问统计。
+### 身份、头像与联系方式
 
-### 添加头像
+当前身份为已正式入学的 **Ph.D. Student**。`author.bio` 是侧栏显示的身份与单位；正文简介在 `_pages/about.md` 中维护。
 
-将照片放入 `assets/images/`，再在 `_config.yml` 中填写：
+当前头像是与模板相同圆形格式的 YL 占位图。将照片放入 `assets/images/`，再修改现有 `author.avatar`：
 
 ```yaml
-author:
-  avatar: "/assets/images/profile.jpg"
+avatar: "/assets/images/profile.jpg"
 ```
 
-这是修改现有 `author` 字段中的 `avatar`，不要重复添加第二个 `author`。未填写时展示姓名缩写 YL。
+`author.github` 填用户名 `Klxxz001`，不要填整个 URL。Google Scholar、ORCID、CV 填完整链接或站内路径，留空时不展示。引用爬虫与访问统计目前未启用。
 
-### 替换论文配图
+### 论文
 
-当前 SVG 是研究主题插图，不是论文中的实证结果图。可把你拥有使用权的论文图放入 `assets/images/`，再修改对应论文的 `image` 和 `image_alt`。
+`authors` 按真实顺序填写；与你的 `author.name` 相同的作者自动加粗。`corresponding_author: true` 添加通讯作者标记。`badge` 是图片上的期刊简称，例如 JFM；年份读取 `year`。
 
-## 发布到 GitHub Pages
+当前图片是研究主题插图，不是论文中的结果图。可以替换为你自己的论文配图；建议使用模板原本的 **500 × 300** 比例，并更新 `image` 和 `image_alt`。
 
-仓库包含 `.github/workflows/pages.yml`：PR 会构建检查；合并或推送到 `main` 后会构建并部署。构建产物 `_site/` 无需手动提交。
+## 构建兼容性
 
-第一次采用这套发布流程时，需在 GitHub 仓库 **Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。
+Gemfile 固定 Sass Embedded 1.77.8，使原模板的 SCSS 按其原有声明顺序编译。较新 Sass 改变了嵌套声明顺序，会影响模板的桌面头像、侧栏和导航。因此升级 Sass 前需重新对照原版预览。Jekyll 使用 4.4，依赖版本保存在 Gemfile.lock。
 
-建议先在改版分支完成检查和提交，再推送该分支并通过 PR 合并到 `main`。线上网址仍然是 <https://klxxz001.github.io/>。
+生成的 `_site/` 无需修改或提交；样式入口是 `main.scss`，不要另建同路径的 `main.css`。
+
+## 发布
+
+`.github/workflows/pages.yml` 会检查 PR；推送或合并到 `main` 后构建并部署。首次使用时，在 GitHub 仓库 Settings → Pages → Build and deployment → Source 选择 GitHub Actions。
+
+在本地预览确认效果后，推送改版分支并通过 PR 合并到 `main` 即可。网址继续为 <https://klxxz001.github.io/>。
 
 ## 来源与授权
 
-参考模板的 MIT 授权与版权信息保存在 `LICENSE`，改版来源记录在 `NOTICE.md`。
+上游版本为 `2cc1577`，MIT 授权保存在 `LICENSE`，来源与改动记录在 `NOTICE.md`。
 
-三篇已发表论文的题名、作者顺序、期刊和 DOI 已于 2026-10-09 核对 Crossref。其余履历和成果状态沿用原主页；后续有变化时应及时更新数据文件。
+三篇已发表论文的题名、作者顺序、期刊和 DOI 已于 2026-10-09 核对 Crossref。其余履历与成果状态沿用原主页；博士入学状态由本人确认。

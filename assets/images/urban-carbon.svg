@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220">
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
   <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#d8e2dd" stroke-width=".5"/></pattern></defs>
-  <rect width="300" height="220" fill="#edf3ef"/><rect width="300" height="220" fill="url(#grid)"/>
+  <rect width="500" height="300" fill="#edf3ef"/><rect width="500" height="300" fill="url(#grid)"/><g transform="translate(45 -8) scale(1.367)">
   <g transform="translate(65 36) rotate(-9 85 65)" stroke="#edf3ef" stroke-width="4"><path d="M0 12h48v45H0z" fill="#c5d7cf"/><path d="M48 0h57v57H48z" fill="#9ebdae"/><path d="M105 12h58v45h-58z" fill="#b4cdc0"/><path d="M0 57h48v52H0z" fill="#b0c8bb"/><path d="M48 57h57v52H48z" fill="#477165"/><path d="M105 57h58v52h-58z" fill="#89ad9b"/><path d="M20 109h60v27H20z" fill="#d1dfd6"/><path d="M80 109h65v27H80z" fill="#b7cdc1"/></g>
   <g fill="none" stroke="#285b79" stroke-width="1.3"><path d="M142 110q-50-42-91-23M158 111q51-23 86 2"/><path d="m55 81-5 6 7 5m180 12 8 9-10 2"/></g>
   <circle cx="150" cy="111" r="5" fill="#edf3ef"/>
   <text x="22" y="194" font-family="Arial,sans-serif" font-size="9" letter-spacing="1.4" fill="#527565">GREEN FINANCE &amp; URBAN ZONES</text>
-</svg>
+</g></svg>
