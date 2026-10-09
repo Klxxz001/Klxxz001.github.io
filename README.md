@@ -43,7 +43,7 @@ Linux 或 WSL 终端使用 `bash run_server.sh`。内容修改会自动重新构
 | 顶部导航 | `_data/navigation.yml` |
 | 最新动态 | `_data/news.yml` |
 | 已发表论文、作者、期刊、年份、DOI、图片 | `_data/publications.yml` |
-| 在审稿件、工作论文 | `_data/working_papers.yml` |
+| 工作论文（只展示题名） | `_data/working_papers.yml` |
 | 研究项目 | `_data/projects.yml` |
 | 教育经历 | `_data/education.yml` |
 | 奖励 | `_data/awards.yml` |
@@ -56,7 +56,7 @@ Linux 或 WSL 终端使用 `bash run_server.sh`。内容修改会自动重新构
 
 ### 身份、头像与联系方式
 
-当前身份为已正式入学的 **Ph.D. Student**。`author.bio` 是侧栏显示的身份与单位；正文简介在 `_pages/about.md` 中维护。
+当前身份为复旦大学大数据学院电子信息专业 **Ph.D. Student**，由北京中关村学院联合培养，导师为 Jie Feng（冯杰）与 Siming Chen（陈思明）。`author.bio` 是侧栏显示的身份与单位；正文简介及导师链接在 `_pages/about.md` 中维护。
 
 当前头像是与模板相同圆形格式的 YL 占位图。将照片放入 `assets/images/`，再修改现有 `author.avatar`：
 
@@ -68,9 +68,9 @@ avatar: "/assets/images/profile.jpg"
 
 ### 论文
 
-`authors` 按真实顺序填写；与你的 `author.name` 相同的作者自动加粗。`corresponding_author: true` 添加通讯作者标记。`badge` 是图片上的期刊简称，例如 JFM；年份读取 `year`。
+`authors` 按真实顺序填写；与你的 `author.name` 相同的作者自动加粗。`corresponding_author: true` 添加通讯作者标记。`badge` 是图片上方的期刊简称，例如 JFM；年份读取 `year`。
 
-当前图片是研究主题插图，不是论文中的结果图。可以替换为你自己的论文配图；建议使用模板原本的 **500 × 300** 比例，并更新 `image` 和 `image_alt`。
+当前配图使用本人提供的论文框架图，原文件位于 `E:\个人主页\论文概览图\`，对应 JFM、JEM、FRL 三篇论文。用于网站的副本保存在 `assets/images/publications/`，保留原始比例与分辨率，点击图片可查看大图。更换时更新 `image` 和 `image_alt`，避免裁剪框架图中的内容。
 
 ## 构建兼容性
 

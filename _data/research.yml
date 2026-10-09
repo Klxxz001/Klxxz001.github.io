@@ -1,23 +1,26 @@
 - number: "01"
-  title: Computational social science
-  subtitle: Policy evaluation & complex systems
-  description: Quantitative approaches to policy effects, social interactions, and regional development.
+  title: Spatial intelligence
+  subtitle: Multimodal spatial reasoning & world models
+  description: Perception, understanding, and simulation of open real-world environments.
   methods:
-    - Econometrics
-    - Machine learning
+    - Multimodal understanding
+    - World models
+    - Spatiotemporal data mining
 
 - number: "02"
-  title: Spatial intelligence
-  subtitle: Urban systems & spatial spillovers
-  description: Spatial interactions across cities and regions, with a focus on heterogeneity and spillover mechanisms.
+  title: Agentic AI
+  subtitle: Embodied intelligence & autonomous decision-making
+  description: Agents that reason, collaborate, and act while interacting with the physical world and human society.
   methods:
-    - Spatial econometrics
-    - GIS analysis
+    - Embodied intelligence
+    - Multi-agent collaboration
+    - Reasoning and decision-making
 
 - number: "03"
-  title: Environmental finance
-  subtitle: Climate risk & financial networks
-  description: How environmental risks, carbon policies, and energy transitions reshape financial stability.
+  title: Urban science
+  subtitle: Human behavior & social simulation
+  description: Geospatial intelligence and human behavior modeling for urban governance and public services.
   methods:
-    - CoVaR networks
-    - Tail-risk analysis
+    - Geospatial intelligence
+    - Human behavior modeling
+    - Social simulation

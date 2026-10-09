@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Yibo Liu"
-description: "Yibo Liu is a Ph.D. student at Fudan University working on computational social science, spatial intelligence, environmental finance, and risk transmission."
+description: "Yibo Liu is a Ph.D. student at the School of Data Science, Fudan University, researching spatial intelligence, agentic AI, and urban science."
 author_profile: true
 redirect_from:
   - /about/
@@ -10,11 +10,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a **Ph.D. student in Intelligent Science and Technology at Fudan University**, in a joint training program with **Beijing Zhongguancun Academy**. Previously, I received my M.A. in Public Policy from Lanzhou University and my B.A. in Land Resource Management from Renmin University of China.
+I am a **Ph.D. student in Electronic Information at the School of Data Science, Fudan University**, in a joint training program with **Beijing Zhongguancun Academy**. I am co-supervised by Prof. [Jie Feng](https://vonfeng.github.io/) (Beijing Zhongguancun Academy) and Prof. [Siming Chen](http://simingchen.me/) (School of Data Science, Fudan University). Previously, I received my M.A. in Public Policy from Lanzhou University and my B.A. in Land Resource Management from Renmin University of China.
 
-My research interests include **computational social science, spatial intelligence, urban computing, and environmental finance**. I study spatial interactions, risk transmission, and policy effects in complex socio-economic systems. I combine econometrics, machine learning, GIS, and network-based risk models to examine nonlinear relationships and spillovers across cities, regions, and financial markets.
+My current research focuses on **spatial intelligence, agentic AI, and urban science**. I am interested in systems that understand, simulate, and act in open real-world environments, especially cities. My interests include multimodal spatial reasoning, world models and embodied intelligence, multi-agent collaboration, and social simulation, with applications in urban governance and public services.
 
-<p lang="zh-CN">我的研究关注复杂社会经济系统中的空间交互、风险传导与政策效应评估，结合空间计量经济学、机器学习、GIS 空间分析与 CoVaR 风险网络，研究环境风险、碳排放政策、能源市场、城市系统与金融市场之间的非线性关系和空间溢出机制。</p>
+Previously, I worked on **computational social science and environmental finance**, focusing on climate and financial risks, spatial spillovers, and policy evaluation.
+
+<p lang="zh-CN">目前，我的研究聚焦空间智能、智能体与城市科学，探索能够理解、模拟并在真实环境中行动的智能系统，重点关注多模态空间推理、世界模型与具身智能、多智能体协作和社会模拟，服务于城市治理与公共服务。此前主要从事计算社会科学、环境金融、气候与金融风险、空间溢出及政策效应评估研究。</p>
 
 # 🔥 News
 {: #news}
@@ -31,16 +33,9 @@ My research interests include **computational social science, spatial intelligen
 {% include publication.html paper=paper %}
 {% endfor %}
 
-**Under review**
-
-{% assign under_review = site.data.working_papers | where: 'status', 'Under review' %}
-{% for paper in under_review %}- {{ paper.title }}. *{{ paper.target_journal }}*. {{ paper.role }}.
-{% endfor %}
-
 **Working papers**
 
-{% assign working_papers = site.data.working_papers | where: 'status', 'Working paper' %}
-{% for paper in working_papers %}- {{ paper.title }}.
+{% for paper in site.data.working_papers %}- {{ paper.title }}.
 {% endfor %}
 
 # 🎖 Honors and Awards

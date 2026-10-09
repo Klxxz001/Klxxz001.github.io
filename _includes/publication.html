@@ -3,7 +3,9 @@
   <div class="paper-box-image">
     <div>
       <div class="badge">{{ paper.badge }} {{ paper.year }}</div>
-      <img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" width="100%">
+      <a href="{{ paper.image | relative_url }}" aria-label="View full-size research framework: {{ paper.title | escape }}" style="display: block; padding-top: 2em;">
+        <img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" width="100%">
+      </a>
     </div>
   </div>
   <div class="paper-box-text">

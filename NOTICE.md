@@ -16,9 +16,11 @@ the upstream revision without design changes.
 
 Personalization replaces sample text with Yibo Liu's biography, publications,
 education, awards, projects, skills, and news. The YL avatar is a portrait
-placeholder. Publication SVG images are thematic illustrations, not figures
-extracted from the publications; their proportions match the template's 500x300
-example.
+placeholder. The three publication framework images were supplied by the owner
+in the local 论文概览图 folder. Website copies preserve their original dimensions
+and proportions, and link to the full-size images through the template's
+existing lightbox.
+A small spacer above each image keeps the venue badge from covering figure labels.
 
 Nonvisual integration changes normalize asset URLs and navigation anchors,
 remove the missing "compress" layout and nested head tag, hide blank profile
@@ -30,4 +32,6 @@ development and later publication.
 Publication titles, author order, journal names, and DOI identifiers were checked
 against Crossref on 2026-10-09. Summaries, author roles, education, projects,
 skills, and awards are based on the previous homepage. Ph.D. enrollment status
-was confirmed by the owner.
+was confirmed by the owner. The School of Data Science affiliation, Electronic
+Information program, co-supervisors, current research interests, and working-paper
+labels were subsequently updated from the owner's instructions.
