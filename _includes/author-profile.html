@@ -1,0 +1,39 @@
+<div class="profile-box">
+  {% if site.author.avatar and site.author.avatar != '' %}
+  <img class="author__avatar" src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name | escape }}" width="108" height="108">
+  {% else %}
+  <div class="author__monogram" aria-hidden="true">{{ site.author.initials }}</div>
+  {% endif %}
+  <div class="author__content">
+    <h2 class="author__name">{{ site.author.name }}</h2>
+    <p class="author__chinese-name" lang="zh-CN">{{ site.author.chinese_name }}</p>
+    <p class="author__role">{{ site.author.role }}</p>
+    <p class="author__field">{{ site.author.field }}</p>
+    <p class="author__university">{{ site.author.university }}</p>
+    <p class="author__affiliation">Joint training with<br> {{ site.author.joint_affiliation }}</p>
+  </div>
+  <div class="profile-links">
+    <a href="mailto:{{ site.author.email }}">
+      <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="2"/><path d="m3 5 7 5 7-5"/></svg>
+      <span>Email</span><span class="link-arrow" aria-hidden="true">↗</span>
+    </a>
+    <a href="{{ site.author.github }}" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M7 6 3 10l4 4m6-8 4 4-4 4m-2-10-2 12"/></svg>
+      <span>GitHub</span><span class="link-arrow" aria-hidden="true">↗</span>
+    </a>
+    {% if site.author.googlescholar and site.author.googlescholar != '' %}
+    <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer"><span>Google Scholar</span><span class="link-arrow" aria-hidden="true">↗</span></a>
+    {% endif %}
+    {% if site.author.orcid and site.author.orcid != '' %}
+    <a href="{{ site.author.orcid }}" target="_blank" rel="noopener noreferrer"><span>ORCID</span><span class="link-arrow" aria-hidden="true">↗</span></a>
+    {% endif %}
+    {% if site.author.cv and site.author.cv != '' %}
+    <a href="{{ site.author.cv | relative_url }}"><span>Curriculum vitae</span><span class="link-arrow" aria-hidden="true">↓</span></a>
+    {% endif %}
+  </div>
+  <div class="profile-note">
+    <span class="small-label">Research toolkit</span>
+    <p>R · Python · Stata · ArcGIS</p>
+  </div>
+  <a class="contact-note" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+</div>

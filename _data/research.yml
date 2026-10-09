@@ -1,0 +1,23 @@
+- number: "01"
+  title: Computational social science
+  subtitle: Policy evaluation & complex systems
+  description: Quantitative approaches to policy effects, social interactions, and regional development.
+  methods:
+    - Econometrics
+    - Machine learning
+
+- number: "02"
+  title: Spatial intelligence
+  subtitle: Urban systems & spatial spillovers
+  description: Spatial interactions across cities and regions, with a focus on heterogeneity and spillover mechanisms.
+  methods:
+    - Spatial econometrics
+    - GIS analysis
+
+- number: "03"
+  title: Environmental finance
+  subtitle: Climate risk & financial networks
+  description: How environmental risks, carbon policies, and energy transitions reshape financial stability.
+  methods:
+    - CoVaR networks
+    - Tail-risk analysis

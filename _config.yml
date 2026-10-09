@@ -1,0 +1,56 @@
+title: "Yibo Liu | 刘一博"
+description: "Yibo Liu is a Ph.D. student at Fudan University working on computational social science, spatial intelligence, environmental finance, and risk transmission."
+url: "https://klxxz001.github.io"
+baseurl: ""
+repository: "Klxxz001/Klxxz001.github.io"
+lang: en
+timezone: Asia/Shanghai
+last_updated: "2026-10-09"
+
+author:
+  name: "Yibo Liu"
+  chinese_name: "刘一博"
+  initials: "YL"
+  role: "Ph.D. Student"
+  field: "Intelligent Science and Technology"
+  university: "Fudan University"
+  joint_affiliation: "Beijing Zhongguancun Academy"
+  email: "liuybbob@163.com"
+  github: "https://github.com/Klxxz001"
+  avatar: ""
+  googlescholar: ""
+  orcid: ""
+  cv: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - NOTICE.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - scripts
+  - run_server.ps1
+  - run_server.sh
+  - preview.log
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author_profile: true
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from

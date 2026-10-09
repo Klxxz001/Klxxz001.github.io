@@ -1,0 +1,48 @@
+# Titles, author order, journal names and DOIs checked against Crossref on 2026-10-09.
+# Author roles and summaries are retained from the original personal homepage.
+- id: carbon-tail-risk
+  title: "Does Cutting Carbon Emissions Reduce Tail Risk Spillovers? A Quantile LSTM-KAN-CoVaR Approach"
+  authors:
+    - Ziwei Wang
+    - Yibo Liu
+    - Peng Lu
+  journal: Journal of Futures Markets
+  year: 2025
+  doi: "10.1002/fut.70063"
+  corresponding_author: true
+  image: "/assets/images/carbon-network.svg"
+  image_alt: "Abstract illustration of carbon emissions and connected energy markets"
+  theme: "Carbon emissions · Energy markets"
+  summary: "Carbon emissions amplify tail-risk exposure in renewable energy futures and strengthen spillovers across European energy futures markets."
+  methods: "Quantile LSTM-KAN · CoVaR"
+
+- id: environmental-systemic-risk
+  title: "Nonlinear relationship between physical environment risks, investor attentions, and financial systemic risks: Evidence from mLSTM-CoVaR networks"
+  authors:
+    - Ziwei Wang
+    - Yibo Liu
+  journal: Journal of Environmental Management
+  year: 2025
+  doi: "10.1016/j.jenvman.2025.124065"
+  corresponding_author: true
+  image: "/assets/images/climate-risk.svg"
+  image_alt: "Abstract illustration of environmental shocks and a financial risk network"
+  theme: "Environmental risk · Financial stability"
+  summary: "Physical environmental risks interact nonlinearly with financial vulnerability; investor attention can amplify their effect under normal market conditions."
+  methods: "mLSTM · CoVaR networks"
+
+- id: micro-zone-carbon
+  title: "Green finance and micro-zone level carbon emissions"
+  authors:
+    - Peng Lu
+    - Ziwei Wang
+    - Yibo Liu
+  journal: Finance Research Letters
+  year: 2025
+  doi: "10.1016/j.frl.2025.107262"
+  corresponding_author: false
+  image: "/assets/images/urban-carbon.svg"
+  image_alt: "Abstract illustration of different urban zones and their spatial connections"
+  theme: "Green finance · Urban carbon emissions"
+  summary: "Green finance reduces emissions primarily in urban centers, while potentially inducing carbon leakage toward suburban areas."
+  methods: "Spatial analysis · Policy evaluation"

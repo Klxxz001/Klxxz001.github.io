@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.title | escape }}</title>
+<meta name="description" content="{{ site.description | escape }}">
+<meta name="author" content="{{ site.author.name | escape }}">
+<meta name="theme-color" content="#f7f7f4">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="{{ site.title | escape }}">
+<meta property="og:description" content="{{ site.description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author.name | jsonify }},
+  "alternateName": {{ site.author.chinese_name | jsonify }},
+  "jobTitle": {{ site.author.role | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "sameAs": [{{ site.author.github | jsonify }}],
+  "affiliation": { "@type": "Organization", "name": {{ site.author.university | jsonify }} }
+}
+</script>
