@@ -1,0 +1,15 @@
+- institution: Fudan University
+  degree: Ph.D. in Electronic and Information Engineering
+  period: "Sep 2026–Present"
+  detail: "School of Data Science; joint training program with Beijing Zhongguancun Academy."
+  current: true
+
+- institution: Lanzhou University
+  degree: M.A. in Public Policy
+  period: "Sep 2023–Jun 2026"
+  detail: "Coursework in advanced econometrics, R, GIS and spatial analysis, environmental governance, and energy policy."
+
+- institution: Renmin University of China
+  degree: B.A. in Land Resource Management
+  period: "Sep 2019–Jun 2023"
+  detail: "Coursework in microeconomics, macroeconomics, real estate finance, and geographic information systems."

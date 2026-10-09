@@ -1,0 +1,26 @@
+- number: "01"
+  title: Spatial intelligence
+  subtitle: Multimodal spatial reasoning & world models
+  description: Perception, understanding, and simulation of open real-world environments.
+  methods:
+    - Multimodal understanding
+    - World models
+    - Spatiotemporal data mining
+
+- number: "02"
+  title: Agentic AI
+  subtitle: Embodied intelligence & autonomous decision-making
+  description: Agents that reason, collaborate, and act while interacting with the physical world and human society.
+  methods:
+    - Embodied intelligence
+    - Multi-agent collaboration
+    - Reasoning and decision-making
+
+- number: "03"
+  title: Urban science
+  subtitle: Human behavior & social simulation
+  description: Geospatial intelligence and human behavior modeling for urban governance and public services.
+  methods:
+    - Geospatial intelligence
+    - Human behavior modeling
+    - Social simulation

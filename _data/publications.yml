@@ -1,0 +1,66 @@
+# Titles, author order, journal names and DOIs checked against Crossref on 2026-10-09.
+# Author roles are retained from the original personal homepage.
+# Summaries are checked against the supplied full-text PDFs on 2026-10-09.
+- id: carbon-tail-risk
+  title: "Does Cutting Carbon Emissions Reduce Tail Risk Spillovers? A Quantile LSTM-KAN-CoVaR Approach"
+  authors:
+    - Ziwei Wang
+    - Yibo Liu
+    - Peng Lu
+  journal: Journal of Futures Markets
+  badge: JFM
+  year: 2025
+  doi: "10.1002/fut.70063"
+  corresponding_author: true
+  image: "/assets/images/publications/jfm-framework.jpg"
+  image_alt: "Research framework combining quantile LSTM-KAN tail-risk networks with carbon emissions analysis"
+  theme: "Carbon emissions · Energy markets"
+  summary:
+    - "Develops a quantile LSTM-KAN-CoVaR framework for nonlinear, time-varying tail-risk spillovers across 29 European futures markets."
+    - "Market fragility rises during Brexit and COVID-19; the Russia-Ukraine conflict also heightens risk in energy-sensitive futures."
+    - "Brent oil, gas oil, and EU carbon allowance (EUA) futures receive substantial tail risk, while Euribor and bond futures are key risk transmitters."
+    - "Higher carbon emissions are associated with greater incoming spillovers in EUA and low-carbon equity futures, with the latter effect more evident in tranquil markets."
+    - "Emission effects depend on volatility: outgoing spillovers from oil-and-gas equity futures strengthen in calm regimes, while Brent crude futures receive more risk in turbulent regimes."
+  methods: "Quantile LSTM-KAN · CoVaR"
+
+- id: environmental-systemic-risk
+  title: "Nonlinear relationship between physical environment risks, investor attentions, and financial systemic risks: Evidence from mLSTM-CoVaR networks"
+  authors:
+    - Ziwei Wang
+    - Yibo Liu
+  journal: Journal of Environmental Management
+  badge: JEM
+  year: 2025
+  doi: "10.1016/j.jenvman.2025.124065"
+  corresponding_author: true
+  image: "/assets/images/publications/jem-framework.jpg"
+  image_alt: "Research framework linking mLSTM-CoVaR financial risk networks, air pollutants, and investor attention"
+  theme: "Environmental risk · Financial stability"
+  summary:
+    - "Combines satellite measures of CO, NOx, and SO2, Google Trends, and quantile mLSTM-CoVaR networks to study 26 banks across 12 EU countries."
+    - "Bank tail risk rises sharply during COVID-19 and the Russia-Ukraine conflict, with no comparable increase during the Israel-Hamas conflict."
+    - "Systemically important banks occupy the network core, while Northern European banks remain peripheral; Russia-Ukraine shocks are more uneven across energy-dependent countries."
+    - "Pollution and systemic risk are linked nonlinearly: higher physical environmental risk generally raises bank fragility, with effects varying across pollution and risk quantiles."
+    - "Investor attention amplifies pollution-related systemic risk mainly under normal market conditions; amplification is weaker at extreme systemic-risk levels."
+  methods: "mLSTM · CoVaR networks"
+
+- id: micro-zone-carbon
+  title: "Green finance and micro-zone level carbon emissions"
+  authors:
+    - Peng Lu
+    - Ziwei Wang
+    - Yibo Liu
+  journal: Finance Research Letters
+  badge: FRL
+  year: 2025
+  doi: "10.1016/j.frl.2025.107262"
+  corresponding_author: false
+  image: "/assets/images/publications/frl-framework.jpg"
+  image_alt: "Research framework for evaluating green finance, urban-rural carbon emissions, and spatial spillovers"
+  theme: "Green finance · Urban carbon emissions"
+  summary:
+    - "Uses remote sensing, GIS, and degree-of-urbanization classifications to examine green finance and carbon emissions across micro-zones within Chinese cities."
+    - "Green finance significantly reduces emissions in urban centers, while reductions in surrounding suburban and rural zones are generally insignificant."
+    - "SUR and spatial IV-GMM estimates identify higher emissions in dense urban clusters, consistent with potential relocation of carbon-intensive activity."
+    - "Within-city emissions exhibit spatial spillovers, highlighting the need for coordinated green-finance policies and carbon accounting across urban centers and neighboring zones."
+  methods: "Spatial analysis · Policy evaluation"

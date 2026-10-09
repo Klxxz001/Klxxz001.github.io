@@ -1,0 +1,77 @@
+title: "Yibo Liu | 刘一博"
+description: "School of Data Science. Electronic and Information Engineering."
+url: "https://klxxz001.github.io"
+baseurl: ""
+repository: "Klxxz001/Klxxz001.github.io"
+lang: en
+timezone: Asia/Shanghai
+last_updated: "2026-10-09"
+
+# Enable only after adding your own Google Scholar profile and citation data.
+google_scholar_stats: false
+google_scholar_stats_use_cdn: true
+google_analytics_id: ""
+
+author:
+  name: "Yibo Liu"
+  chinese_name: "刘一博"
+  initials: "YL"
+  role: "Ph.D. Student"
+  field: "Electronic and Information Engineering"
+  school: "School of Data Science"
+  university: "Fudan University"
+  joint_affiliation: "Beijing Zhongguancun Academy"
+  bio: "Ph.D. Student, Fudan University"
+  email: "liuybbob@163.com"
+  github: "Klxxz001"
+  avatar: "/assets/images/profile-placeholder.svg"
+  googlescholar: ""
+  orcid: ""
+  cv: ""
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  # Keep the original template's Sass; suppress its known legacy syntax notices.
+  silence_deprecations:
+    - slash-div
+    - mixed-decls
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - NOTICE.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .github
+  - scripts
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - run_server.ps1
+  - run_server.sh
+  - preview.log
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author_profile: true
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
